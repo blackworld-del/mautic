@@ -5,7 +5,7 @@ services:
     image: mariadb:latest
     container_name: mautic-db
     environment:
-      MYSQL_ROOT_PASSWORD: $2a$12$2nfQaodPY92HYkObn9QKH.ApURCiEMn2Ns94frXFGoqqYlufFR412
+      MYSQL_ROOT_PASSWORD: 29cfe565c173377d2c8f1d3b56507c47f300ebd2
     ports:
       - "3306:3306"
     volumes:
@@ -23,7 +23,7 @@ services:
     environment:
       - MAUTIC_DB_HOST=database
       - MAUTIC_DB_USER=root
-      - MAUTIC_DB_PASSWORD=$2a$12$2nfQaodPY92HYkObn9QKH.ApURCiEMn2Ns94frXFGoqqYlufFR412
+      - MAUTIC_DB_PASSWORD=29cfe565c173377d2c8f1d3b56507c47f300ebd2
       - MAUTIC_DB_NAME=mautic4
       - MAUTIC_DB_TABLE_PREFIX=mautic4
     restart: always
